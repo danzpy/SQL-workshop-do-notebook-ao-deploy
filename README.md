@@ -179,10 +179,11 @@ CREATE TABLE produtos (
 
 ```sql
 
-INSERT INTO produtos (titulo, descricao, preco) VALUES 
-('Cadeira Gamer', 'Cadeira confortável para fazer live', 1200.00),
-('Workshop', 'Workshop de deploy', 100.00),
-('Iphone', 'Iphone 14', 2000.00);
+INSERT INTO produtos (id, nome, descricao, preco) VALUES
+  (1, 'iPhone 14', 'Apple iPhone 14 128GB Meia-Noite 5G Tela 6,1" Câm. Traseira 12+12MP Frontal 12MP', 4699.00),
+  (2, 'ThinkPad L14', 'Notebook ThinkPad L14 (14” Intel)', 3328.00),
+  (3, 'iPad 10.9', 'Apple iPad 10.9" 10ª Geração, Wi-Fi, 256GB, Prateado', 4699.00);
+
 
 ```
 
@@ -297,7 +298,7 @@ Porém, vamos realizar as operações de CRUD usando o FastAPI.
 
 CREATE TABLE bronze_produtos (
     id SERIAL PRIMARY KEY,
-    titulo VARCHAR(255),
+    nome VARCHAR(255),
     descricao TEXT,
     preco NUMERIC(10,2)
 );
