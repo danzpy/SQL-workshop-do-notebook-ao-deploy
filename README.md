@@ -308,15 +308,9 @@ CREATE TABLE bronze_produtos (
 
 ```sql
 
-INSERT INTO bronze_produtos (titulo, descricao, preco) VALUES 
-('Cadeira Gamer', 'Cadeira confortável para fazer live', 1200.00),
-('Workshop', 'Workshop de deploy', 100.00),
-(null, 'Iphone 14', 2000.00),
-('Geladeira', 'Geladeira Automatica', 3200.00),
-('Fogão', 'De 6 bocas', 1100.00),
-('Cama', 'De Solteiro', -2000.00),
-('Mesa', 'De Jantar', 1700.00),
-('Televisão', 'Colorida', 1750.00),
-('Playstation', 'Com vários jogos', 1800.00;)
+INSERT INTO produtos (id, nome, descricao, preco) VALUES
+  (1, 'iPhone 14', 'Apple iPhone 14 128GB Meia-Noite 5G Tela 6,1" Câm. Traseira 12+12MP Frontal 12MP', 4699.00),
+  (2, 'ThinkPad L14', 'Notebook ThinkPad L14 (14” Intel)', 3328.00),
+  (3, 'iPad 10.9', 'Apple iPad 10.9" 10ª Geração, Wi-Fi, 256GB, Prateado', 4699.00);
 
 ```
